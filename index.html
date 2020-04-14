@@ -4,7 +4,7 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
-  <link rel="shortcut icon" href="images/yqrg.favicon.png">
+  <link rel="shortcut icon" href="./images/yqrg.favicon.png">
   <title>Yale Student Quantitative Research Group</title>
   <meta content="The Yale Student Quantitative Research Group is a student-run organization focused on quantitative finance education on campus." name="description"/>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway"/>
@@ -25,10 +25,11 @@
         });
     });
     var show = function(a){
-    $("#tabs-".concat(a)).addClass("active").siblings().removeClass("active");};
+    $("#tabs-".concat(a)).addClass("active").siblings().removeClass("active");
+    $("#li-".concat(a)).addClass("active").siblings().removeClass("active");};
   </script>
 </head>
-<body data-gr-c-s-loaded="true">
+<body>
   <header id="header" role="banner">
     <div class="header-inner">
       <div id="logo">
@@ -62,11 +63,11 @@
       <div class="overlay">
         <div class="container">
           <div class="header-push" style="height: 90px;"></div>
-          <div class="hero-content" data-id="5d7cfb8a4734fe46e48d02b5" data-location="hero_content" data-type="hero">
+          <div class="hero-content">
             <div class="hero-container">
               <h1 dir="ltr">Yale Student Quantitative<br/>Research Group</h1>
               <h3 style="color: #fff;">Systematic Investing for a Changing World</h3>
-              <a class="btn primary" data-slug="about-us" href="#section-who-we-are">Learn More »</a>
+              <a class="btn primary" href="#section-who-we-are">Learn More »</a>
             </div>
           </div>
         </div>
@@ -74,7 +75,7 @@
     </div>
     <div class="main-content-wrapper" style="padding-bottom:0;">
       <div class="container">
-        <div class="main-content" data-id="5d7cfb8a4734fe46e48d02b5" data-location="content" data-type="page">
+        <div class="main-content">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-5">
               <h4>Completely Student-Run</h4>
@@ -92,7 +93,7 @@
   <section class="section page-section" id="section-who-we-are">
    <div class="main-content-wrapper">
     <div class="container">
-     <div class="main-content" data-id="5d7cfb8a4734fe46e48d02a4" data-location="content" data-type="page">
+     <div class="main-content">
       <h1 style="text-align: center;">
        Who We Are
       </h1>
@@ -102,12 +103,12 @@
      <div class="section-tabs">
       <nav class="tabs-nav">
        <ul>
-        <li class="active">
+        <li id="li-about" class="active">
          <a onclick="show('about');">
           About Us
          </a>
         </li>
-        <li>
+        <li id="li-our-team">
          <a onclick="show('our-team');">
           Our Team
          </a>
@@ -118,7 +119,7 @@
       </nav>
       <div class="tabs-content">
        <div id="tabs-about" class="tab-pane active">
-        <div class="main-content" data-id="5d7cfb8a4734fe46e48d02ae" data-location="content" data-type="page">
+        <div class="main-content">
          <h2>
           <br/>
          </h2>
@@ -132,7 +133,7 @@
         </div>
        </div>
        <div id="tabs-our-team" class="tab-pane">
-        <div class="main-content" data-id="5d7cfb8a4734fe46e48d02ab" data-location="content" data-type="page">
+        <div class="main-content">
         </div>
         <section class="members-list">
          <div class="members-wrapper">
@@ -229,7 +230,7 @@
     </div>
     <div class="overlay">
      <div class="container">
-      <div class="hero-content" data-id="5d7cfb8a4734fe46e48d02a1" data-location="hero_content" data-type="hero">
+      <div class="hero-content">
        <h2 style="text-align: center;">Providing Quantitative Finance </br>Education on Campus</h2>
        <hr/>
       </div>
@@ -238,7 +239,7 @@
    </div>
    <div id="section-what-we-do" class="main-content-wrapper">
     <div class="container">
-     <div class="main-content" data-id="5d7cfb8a4734fe46e48d02a1" data-location="content" data-type="page">
+     <div class="main-content">
       <h1 style="text-align: center;">What We Do</h1>
      </div>
     </div>
@@ -246,13 +247,13 @@
      <div class="section-tabs">
       <nav class="tabs-nav">
        <ul>
-        <li class="active">
+        <li id="li-education" class="active">
          <a onclick="show('education');">Education</a>
         </li>
-        <li>
+        <li id="li-recruiting">
          <a onclick="show('recruiting');">Recruiting</a>
         </li>
-        <li>
+        <li id="li-research">
          <a onclick="show('research');">Research</a>
         </li>
         <span class="indicator">
@@ -261,7 +262,7 @@
       </nav>
       <div class="tabs-content">
         <div id="tabs-education" class="tab-pane active">
-          <div class="main-content" data-id="5d7cfb8a4734fe46e48d02b1" data-location="content" data-type="page">
+          <div class="main-content">
             <h2><br/></h2>
             <h2>What We Do: Education</h2>
             <p>We teach members all they need to know about finance. We look for students with a general interest in the field of finance/investment and strong quantitative skills in the areas of mathematics, statistics, computer science, et cetera. Many successful members of our organization entered with little to no investment knowledge but came prepared with backgrounds in physics, engineering, and other STEM fields.</br></p>
@@ -269,14 +270,14 @@
           </div>
         </div>
        <div id="tabs-recruiting" class="tab-pane">
-        <div class="main-content" data-id="5d7cfb8a4734fe46e48d02b2" data-location="content" data-type="page">
+        <div class="main-content">
          <h2><br/></h2>
          <h2>What We Do: Recruiting</h2>
          <p>In addition to organized recruiting events and tech talks which are limited to club members, we make visits to firms and host a variety of other networking events.</p>
         </div>
        </div>
        <div id="tabs-research" class="tab-pane">
-        <div class="main-content" data-id="5d7cfb8a4734fe46e48d02b9" data-location="content" data-type="page">
+        <div class="main-content">
          <h2><br/></h2>
          <h2>What We Do: Research<br/></h2>
          <p>With the knowledge, members have acquired through our educational curricula, lecture series, and guest speakers, members embark on their own research projects and develop their own ideas for algorithmic trading, informed sports betting, and other quantitatively driven financial opportunities.<br/></p>
@@ -293,7 +294,7 @@
     </div>
     <div class="overlay">
      <div class="container">
-      <div class="hero-content" data-id="5d7cfb8a4734fe46e48d02b6" data-location="hero_content" data-type="hero">
+      <div class="hero-content">
        <h2 style="text-align: center;">Providing Students with Access to Opportunities<br/>in Quantitative Finance</h2>
        <hr/>
       </div>
@@ -302,7 +303,7 @@
    </div>
    <div id="section-our-sponsors" class="main-content-wrapper">
     <div class="container">
-     <div class="main-content" data-id="5d7cfb8a4734fe46e48d02b6" data-location="content" data-type="page">
+     <div class="main-content">
       <h1 style="text-align: center; padding-bottom:1em;">Our Sponsors</h1>
       <div class="row">
        <div class="col-xs-12 col-sm-6" style="text-align: center;">
@@ -349,6 +350,6 @@
       </div>
     </div>
    </footer>
-  <script src="./files/main-2.0.0.js"></script>
+  <!--<script src="./files/main-2.0.0.js"></script>-->
  </body>
 </html>
