@@ -47,6 +47,7 @@ body {
     background-attachment: fixed; 
     /*background-size: cover;*/
     background-size: auto;
+    opacity: .8;
   }
   
   .has-bg #page {
